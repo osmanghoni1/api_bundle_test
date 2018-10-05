@@ -2,3 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+# calc:
+#   type:     rest
+#   resource: App\Controller\CalculatorController
+
+# Hello:
+#   type:     rest
+#   resource: App\Controller\HelloController
