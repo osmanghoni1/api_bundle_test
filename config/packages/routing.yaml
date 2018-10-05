@@ -2,8 +2,3 @@ framework:
     router:
         strict_requirements: ~
 
-
-users:
-    type:     rest
-    host:     m.example.com
-    resource: Acme\HelloBundle\Controller\UsersController
