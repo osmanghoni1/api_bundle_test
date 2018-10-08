@@ -25,19 +25,19 @@ class CalculatorController extends AbstractController
 
     private function do_operation(string $op, int $n1, int $n2) {
         if ($op === '*') {
-            return $n1 * $n2;
+            return ['product' => ($n1 * $n2)];
         }
 
         if ($op === '+') {
-            return $n1 + $n2;
+            return [ 'sum' => ($n1 + $n2)];
         }
 
         if ($op === '-') {
-            return $n1 - $n2;
+            return ['difference' => ($n1 - $n2)];
         }
 
         if ($op === '/' && $n2 !== 0) {
-            return $n1 / $n2;
+            return ['quotient' => ($n1 / $n2)];
         }
 
         if ($op === '/' && $n2 == 0) {

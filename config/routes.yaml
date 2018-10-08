@@ -9,3 +9,6 @@
 # Hello:
 #   type:     rest
 #   resource: App\Controller\HelloController
+
+api_login_check:
+    path: /api/login_check

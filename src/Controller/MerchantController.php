@@ -52,7 +52,7 @@ class MerchantController extends AbstractController
         $stmt = $connection->prepare("DELETE FROM public.merchants WHERE mid = :mid RETURNING id");
         $stmt->execute([':mid' => $mid]);
         $id = $stmt->fetchColumn();
-        return new JsonResponse(['id' => $id]);
+        return new JsonResponse(['table_id' => $id]);
     }
 
 }
