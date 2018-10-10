@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class CalculatorController extends AbstractController
 {
     /**
-     * @Post("/calc", name="calc");
+     * @Post("/api/calc", name="calc");
      */
     public function postCalcAction(Request $request)
     {

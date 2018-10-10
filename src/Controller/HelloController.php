@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-
 use Symfony\Component\Routing\Annotation\Route;
 use FOS\RestBundle\Controller\Annotations\Get;
 use FOS\RestBundle\Controller\FOSRestController;
@@ -11,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class HelloController extends FOSRestController
 {
     /**
-     * @GET("/hello", name="hello")
+     * @GET("/api/hello", name="hello")
      */
     public function getHelloAction()
     {
@@ -19,7 +18,7 @@ class HelloController extends FOSRestController
     }
     
     /**
-     * @GET("/hello/{name}", name="hello_name")
+     * @GET("/api/hello/{name}", name="hello_name")
      */
     public function getHelloNameAction($name)
     {

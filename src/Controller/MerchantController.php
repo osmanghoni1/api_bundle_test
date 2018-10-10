@@ -13,7 +13,7 @@ use Doctrine\DBAL\Driver\Connection;
 class MerchantController extends AbstractController
 {
     /**
-     * @Post("/create_mid", name="create_mid")
+     * @Post("/api/create_mid", name="create_mid")
      */
     public function postMerchantAction(Request $request, Connection $connection)
     {
@@ -28,7 +28,7 @@ class MerchantController extends AbstractController
     }
 
     /**
-     * @Put("/update_mid_dba", name="update_mid_dba")
+     * @Put("/api/update_mid_dba", name="update_mid_dba")
      */
     public function putMerchant(Request $request, Connection $connection)
     {
@@ -43,7 +43,7 @@ class MerchantController extends AbstractController
     }
 
     /**
-     * @Delete("/delete_merchant", name="delete_merchant")
+     * @Delete("/api/delete_merchant", name="delete_merchant")
      */
     public function deleteMerchant(Request $request, Connection $connection)
     {
