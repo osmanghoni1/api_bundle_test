@@ -7,8 +7,8 @@ security:
         in_memory:  
             memory:
                 users:
-                    oghoni:
-                        password: oghoni
+                    osman:
+                        password: osman
                         roles: 'ROLE_USER'
     firewalls:
         dev:
